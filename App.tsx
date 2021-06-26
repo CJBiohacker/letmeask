@@ -1,10 +1,10 @@
-import { Home } from './pages/Home'
-import { NewRoom } from './pages/NewRoom';
-import { Room } from './pages/Room';
+import { Home } from './src/pages/Home'
+import { NewRoom } from './src/pages/NewRoom';
+import { Room } from './src/pages/Room';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { AuthContextProvider } from './contexts/AuthContext'
+import { AuthContextProvider } from './src/contexts/AuthContext'
 
 function App() {
   return (
