@@ -1,0 +1,160 @@
+#page-auth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 5.5;
+    background:#0a3b5c ;
+    color: #c35afa;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+    
+    img {
+      max-width: 200px;
+    }
+
+    strong {
+      font: 700 36px 'Work Sans', sans-serif;
+      line-height: 40px;
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 24;
+      line-height: 32px;
+      margin-top: 16px;
+      color: #835AFD;
+    }
+
+  }
+
+  main {
+    flex: 8;
+    background: white;
+    padding: 0px 36px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+      
+      align-items: stretch;
+      text-align: center;
+
+      > img {
+        align-self: center;
+      }
+      
+      h2 {
+       font-size: 24px;
+       margin: 64px 0 24px;
+       font: 'Work Sans', sans-serif;
+
+      }
+
+      .create-room {
+        margin-top: 48px;
+        height: 60px;
+        border-radius: 8px;
+        font-weight: 600;
+        background: #C5221E;
+        color:white;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        border: 0;
+
+        transition: 0.25s;
+
+        img {
+          margin-right: 8px;
+          width: 9%;
+        }
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+        
+        p {
+          font-size: 15px;
+          color: white;
+          
+        }
+
+      }
+
+      .separator {
+        font-size: 15px;
+        color: #496E86;
+        margin: 32px 0;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: '';
+          flex: 1;
+          height: 1.5px;
+          background:#496E86;
+          margin-right: 16px;    
+        }
+
+        &:after {
+          content: '';
+          flex: 1;
+          height: 1.5px;
+          background:#496E86;
+          margin-left: 16px;    
+        }
+    
+      }
+
+      form {
+
+        input {
+          height: 50px;
+          border-radius: 8px;
+          padding: 0 16px;
+          background: white;
+          border: 1px solid grey;
+          margin-top: 8px;
+          width: 100%;
+          
+        }
+
+        button {
+        margin-top: 16px;
+        width: 100%;
+          
+        }
+      
+        p {
+        font-size: 12px;
+        color:#737380;
+        margin-top: 16px;
+
+        a {
+          color: #e559fe;
+        }
+      
+        }
+
+      }
+
+    }
+      
+  }
+
+}
+
