@@ -1,0 +1,34 @@
+.question {
+    background: #061b29;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px black;
+
+    
+    p {
+        color: white;    
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        margin-top: 24px;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+  
+            img {
+              width: 48px;
+              height: 48px;
+            }
+  
+            span {
+              margin-left: 10px;
+              color: white;
+              font-size: 14px;
+              font-weight: 500;
+            }
+        }
+    }
+}

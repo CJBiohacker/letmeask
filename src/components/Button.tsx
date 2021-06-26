@@ -2,10 +2,15 @@ import { ButtonHTMLAttributes } from "react";   // Importação do Template de A
 
 import '../style/button.scss';  // Importação da Estilização SASS CSS para o Botão de 'Entrar na Sala'
 
-type buttonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type buttonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+    isOutlined?: boolean
+};
 
-export function Button(props: buttonProps) {
+export function Button({ isOutlined = false, ...props }: buttonProps) {
     return (
-        <button className="button" {...props} />
+        <button
+            className={`button ${isOutlined ? 'outlined' : ''}`}
+            {...props}
+        />
     )
 }
